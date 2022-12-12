@@ -1,0 +1,110 @@
+* {
+  font-family: Roboto, sans-serif;
+  list-style-type: none;
+}
+body {
+  width: 100%;
+  margin: 0%;
+}
+body.order {
+  background-image: url("images/onlineOrderBackground.png"); /*Left the picture overlap because I thought it looked cool*/
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+  top: 0;
+}
+h1 {
+  color: rgb(10, 115, 236);
+  padding-left: 20px;
+  font-size: 2.5rem;
+}
+nav {
+  font-size: 1.3rem;
+  position: relative;
+  left: 350px;
+}
+a {
+  border-radius: 15% 15% 15% 15%;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(10, 115, 236);
+  color: white;
+}
+nav a:hover {
+  color: orange;
+  background-color: white;
+  border: rgb(10, 115, 236) 5px solid;
+}
+nav li {
+  padding: 0px 50px 0px 0px;
+  display: inline-block;
+}
+.container {
+  text-align: center;
+  position: relative;
+  margin: auto;
+  background-color: rgba(245, 245, 245, 0.7);
+  width: 95%;
+  height: 675px;
+  top: 10px;
+  border-radius: 10% 10% 10% 10%;
+}
+.box {
+  text-align: left;
+  width: 400px;
+  height: 400px;
+  position: relative;
+  margin: auto;
+  top: 50px;
+}
+span {
+  position: relative;
+  margin: auto;
+  background-color: rgb(99, 161, 231);
+  padding: 10px 10px 10px 10px;
+  border-radius: 15% 15% 15% 15%;
+}
+#submit {
+  margin-top: 20px;
+  width: 100px;
+}
+#submit:hover {
+  background-color: orange;
+}
+@media only screen and (max-width: 1350px) {
+  header {
+    width: screen;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  nav {
+    display: flex;
+    left: 250px;
+  }
+}
+@media all and (max-width: 1000px) {
+  header {
+    height: 80px;
+  }
+  nav {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    left: 15px;
+    top: 80px;
+  }
+  a {
+    padding: 5px 5px 5px 5px;
+  }
+  #bigGaryLogo {
+    height: 80px;
+  }
+  .container {
+    margin-top: 45px;
+  }
+}

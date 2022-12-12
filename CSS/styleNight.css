@@ -1,0 +1,143 @@
+/* Night Buttonm - Not Completed (Wanted search to end once circle was found)*/
+* {
+  font-family: Roboto, sans-serif;
+}
+body {
+  width: 100%;
+  margin: 0;
+  background-color: black;
+  font-size: 1.5rem;
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+  grid-area: header;
+}
+h1 {
+  position: absolute;
+  color: rgb(10, 115, 236);
+  margin-left: 150px;
+  font-size: 2.5rem;
+}
+nav {
+  font-size: 1.3rem;
+  position: relative;
+  left: 650px;
+}
+a {
+  border-radius: 15% 15% 15% 15%;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(10, 115, 236);
+  color: white;
+}
+nav a:hover {
+  color: orange;
+  background-color: white;
+  border: rgb(10, 115, 236) 5px solid;
+}
+nav li {
+  padding: 0px 50px 0px 0px;
+  display: inline-block;
+}
+.circle1 {                    /* Making each circle transparent so hidden until hovered*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 40px;
+    grid-area: circle1;
+}
+.circle1:hover {
+    background-color: white;
+    border: orange 20px solid;
+    
+}
+.circle2 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    grid-area: circle2;
+}
+.circle2:hover {
+    background-color: white;
+    border: orange 20px solid;
+}
+.circle3 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    grid-area: circle3;
+}
+.circle3:hover {
+    background-color: white;
+    border: orange 20px solid;
+}
+.circle4 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-left: 100px;
+    grid-area: circle4;
+}
+.circle4:hover {
+    background-color: white;
+    border: orange 20px solid;
+}
+.circle5 {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    grid-area: circle5;
+}
+.circle5:hover {
+    background-color: white;
+    border: orange 20px solid;
+}               
+button {                        /* Button to claim coupon */
+    width: 150px;
+    font-size: 1em;
+    font-weight: 700;
+    background-color: orange;
+    color: rgb(10, 115, 236);
+    margin: auto;
+    grid-area: button;
+}    
+.container {                        /* Container for grid to position circles*/           
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows:  100px 300px 300px;
+    grid-template-areas: 
+    "header header header"
+    "circle1 circle3 circle2"
+    "circle4  button circle5";
+    display: inline-flexbox;
+    align-items: center;
+}
+p {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}

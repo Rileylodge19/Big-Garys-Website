@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Night</title>
+    <link rel="stylesheet" href="styleNight.css">
+</head>
+<header>
+    <img
+      src="images/bigGary.png"
+      id="bigGaryLogo"
+      alt="bigGary"
+      width="150px"
+      height="100px"
+    />
+    <h1>Gary Blue's Diner</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="/index.html" style="text-decoration: none">Home</a>
+        </li>
+        <li>
+          <a href="/menu.html" style="text-decoration: none"
+            >Menu</a
+          >
+        </li>
+        <li>
+          <a href="/onlineOrder.html" style="text-decoration: none">Online Orders</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+<body class="container">
+    <div class="circle1">Free Taters!</div>
+    <div class="circle2">30% OFF!</div>
+    <div class="circle3">Free Soup</div>
+    <div class="circle4">Free BIG GARY!!!</div>
+    <div class="circle5">&dollar;5 Coupon!</div>
+
+<script>
+function display()
+{
+var col=document.getElementById("congrats");
+col.style.color="#0A73EC";
+}
+</script>
+<p id="congrats">Congratulations! Please select again in 48 hours!</p>
+<button onclick="display()">Claim Coupon</button>
+</body>
+</html>

@@ -1,0 +1,191 @@
+* {
+  font-family: Roboto, sans-serif;
+  list-style-type: none;
+}
+body {
+  width: 100%;
+  margin: 0%;
+  background-image: url("images/menuBackground.png");
+  background-size: 100% 100%;
+}
+header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  width: 100%;
+  background-color: orange;
+  top: 0;
+  grid-area: header;
+}
+h1 {
+  color: rgb(10, 115, 236);
+  padding-left: 20px;
+  font-size: 2.5rem;
+}
+nav {
+  font-size: 1.3rem;
+  position: relative;
+  left: 350px;
+}
+a {
+  border-radius: 15% 15% 15% 15%;
+  padding: 10px 10px 10px 10px;
+  background-color: rgb(10, 115, 236);
+  color: white;
+}
+nav a:hover {
+  color: orange;
+  background-color: white;
+  border: rgb(10, 115, 236) 5px solid;
+}
+nav li {
+  padding: 0px 50px 0px 0px;
+  display: inline-block;
+}
+.wrapper {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 0.5fr 1.5fr 1.5fr 1.5fr;
+  grid-template-areas:
+    "header header header"
+    "item1 item2 item3"
+    "item4 item5 item6"
+    "item7 item8 item9";
+  grid-gap: 0.5fr;
+  text-align: center;
+}
+.item1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item1;
+}
+.item2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item2;
+}
+.item3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item3;
+}
+.item4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item4;
+}
+.item5 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item5;
+}
+.item6 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item6;
+}
+.item7 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item7;
+}
+.item8 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item8;
+}
+.item9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  grid-area: item9;
+}
+h2 {
+  font-size: 2rem;
+  color: orange;
+}
+section:hover h2 {
+  position: absolute;
+  color: rgb(10, 115, 236);
+  text-decoration: orange underline;
+}
+section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 400px;
+  height: 75px;
+  background-color: white;
+  border-radius: 20% 20% 20% 20%;
+}
+section:hover {
+  display: flex;
+  align-items: flex-start;
+  width: 350px;
+  height: 150px;
+  border: orange 5px solid;
+}
+p {
+  display: none;
+}
+section:hover p {
+  display: flex;
+  position: relative;
+  top: 50px;
+  width: 300px;
+}
+
+@media only screen and (max-width: 1350px) {
+  .wrapper {
+    grid-template-columns: 7fr;
+    grid-template-rows: 0.5fr 1fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr 2fr;
+    grid-template-areas:
+      "header"
+      "nav"
+      "item1"
+      "item2"
+      "item3"
+      "item4"
+      "item5"
+      "item6"
+      "item7"
+      "item8"
+      "item9";
+    row-gap: 30px;
+  }
+  h1 {
+    font-size: 2em;
+  }
+  nav {
+    display: flex;
+    left: 0;
+  }
+  @media all and (max-width: 1000px) {
+    header {
+      height: 80px;
+    }
+    nav {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      left: 15px;
+      top: 80px;
+    }
+    a {
+      padding: 5px 5px 5px 5px;
+    }
+    #bigGaryLogo {
+      height: 80px;
+    }
+  }
+}

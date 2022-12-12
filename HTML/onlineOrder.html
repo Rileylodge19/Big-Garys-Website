@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Orders</title>
+    <link rel="stylesheet" href="styleOrder.css" />
+  </head>
+  <header>
+    <img
+      src="images/bigGary.png"
+      id="bigGaryLogo"
+      alt="bigGary"
+      width="150px"
+      height="100px"
+    />
+    <h1>Gary Blue's Diner</h1>
+    <nav>
+      <ul>
+        <li>
+          <a href="/index.html" style="text-decoration: none">Home</a>
+        </li>
+        <li>
+          <a href="/menu.html" style="text-decoration: none">Our Menu</a>
+        </li>
+        <li>
+          <a href="/night.html" style="text-decoration: none">Night</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <body class="order">
+    <div class="container">
+      <div class="box">
+        <ul>
+          <li>
+            <span class="space">
+              <input
+                type="checkbox"
+                id="Big Gary"
+                name="Big Gary"
+                value="Big Gary"
+              />
+              <label for="Big Gary">
+                Big Gary
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+              <input
+                type="number"
+                name="amount"
+                id="Quantity"
+                min="0"
+                max="9"
+                value="1"
+              />
+              <span> Quantity</span>
+            </span>
+          </li>
+          <br />
+          <br />
+          <br />
+          <li>
+            <span class="space">
+              <input type="checkbox" id="Taters" name="Taters" value="Taters" />
+
+              <label for="Taters">
+                Taters
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+
+              <input
+                type="number"
+                name="amount"
+                id="Quantity"
+                min="0"
+                max="9"
+                value="1"
+              />
+              <span> Quantity</span>
+            </span>
+          </li>
+          <br />
+          <br />
+          <br />
+          <li>
+            <span class="space">
+              <input type="checkbox" id="Soup" name="Soup" value="Soup" />
+
+              <label for="Soup">
+                Soup
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+
+              <input
+                type="number"
+                name="amount"
+                id="Quantity"
+                min="0"
+                max="9"
+                value="1"
+              />
+              <span> Quantity</span>
+            </span>
+          </li>
+          <br />
+          <br />
+          <br />
+          <li>
+            <span class="space">
+              <input
+                type="checkbox"
+                id="Bucket o' Chicken"
+                name="Bucket o' Chicken"
+                value="Bucket o' Chicken"
+              />
+
+              <label for="Bucket o' Chicken">
+                Bucket o' Chicken &nbsp;&nbsp;</label
+              >
+
+              <input
+                type="number"
+                name="amount"
+                id="Quantity"
+                min="0"
+                max="9"
+                value="1"
+              />
+              <span> Quantity</span>
+            </span>
+          </li>
+          <br />
+          <br />
+          <br />
+          <li>
+            <span class="space">
+              <input type="checkbox" id="Salad" name="Salad" value="Salad" />
+
+              <label for="Salad">
+                Salad
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label
+              >
+
+              <input
+                type="number"
+                name="amount"
+                id="Quantity"
+                min="0"
+                max="9"
+                value="1"
+              />
+              <span> Quantity</span>
+            </span>
+          </li>
+        </ul>
+      </div>
+      <form>
+        <br />
+        <input type="text" id="name" name="name" /> <br />
+        <label for="name">Name</label> <br />
+        <br />
+        <input type="text" id="Address" name="Address" /> <br />
+        <label for="Address">Address</label> <br />
+        <br />
+        <input type="text" id="cardNumber" name="cardNumber" /> <br />
+        <label for="cardNumber">Card Number</label> <br />
+        <br />
+        <input
+          onclick="return confirm('Please confirm this is the correct order.');"
+          type="submit"
+          id="submit"
+          name="submit"
+        />
+        <br />
+      </form>
+    </div>
+  </body>
+</html>
